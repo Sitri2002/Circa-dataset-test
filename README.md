@@ -5,4 +5,4 @@ Install approriate libaries according to import headers.
 
 Run finetune.py to train models, run testing.py to get classification reports.
 
-Can also check out the embedded CSV to see my training results.
+Can also check out the embedded CSV in my_reports subdir to see my training results.
