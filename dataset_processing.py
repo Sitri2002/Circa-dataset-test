@@ -10,7 +10,7 @@ val_size = 0.5
 def dataset_process():
     data = load_dataset("circa", split = "train")
     data = data.add_column("QA-pair", [""]*len(data))
-    data = data.map(lambda x:{"QA-pair": x["question-X"] + ";" + x["answer-Y"]})
+    data = data.map(lambda x:{"QA-pair": x["question-X"] + " [SEP] " + x["answer-Y"]})
     '''
         have to filter out unnamed label (-1), since BCE can only take positive input ranges. Did not
         affect overall accuracy too much, but maybe did have an effect somewhat.
