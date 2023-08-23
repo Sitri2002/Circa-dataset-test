@@ -32,9 +32,9 @@ def dataset_process():
     '''
         change seed for train data shuffling as needed. Doesnt find it neccesary to shuffle val and test data.
     '''
-    question_ds["train"].shuffle(seed = 24)
-    answer_ds["train"].shuffle(seed = 24)
-    pair_ds["train"].shuffle(seed = 24)
+    question_ds["train"].shuffle(seed = 22)
+    answer_ds["train"].shuffle(seed = 22)
+    pair_ds["train"].shuffle(seed = 22)
 
     question_ds["test"] = question_ds["test"].train_test_split(train_size = val_size, shuffle = False)
     answer_ds["test"] = answer_ds["test"].train_test_split(train_size = val_size, shuffle = False)
