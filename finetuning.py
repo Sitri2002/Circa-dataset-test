@@ -5,7 +5,7 @@ import numpy as np
 import evaluate
 
 CUDA_LAUNCH_BLOCKING=1
-
+#test
 def tokenizer_init():
     base_tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
     mnli_tokenizer = AutoTokenizer.from_pretrained("textattack/bert-base-uncased-MNLI")
